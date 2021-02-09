@@ -10,7 +10,7 @@ from crypto import *
 from selenium.webdriver.support.ui import WebDriverWait
 
 path = "/Desktop/Testing/WebCrawlerDrivers/chromedriver"
-username = str('Hyacinthhax')
+username = str('USERNAME')
 
 decryption()
 global passw
