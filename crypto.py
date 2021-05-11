@@ -1,7 +1,7 @@
 import gpg
 
 def encryption():
-	a_key = "100457DF08D904F4D7C15397CF7BDEFE9075694A"
+	a_key = "YOURKEYIDHERE"
 	filename = "password.txt"
 	with open(filename, "rb") as afile:
     		text = afile.read()
@@ -14,7 +14,7 @@ def encryption():
     		bfile.write(ciphertext)
 
 def decryption():
-	a_key = "100457DF08D904F4D7C15397CF7BDEFE9075694A"
+	a_key = "YOURKEYIDHERE"
 	filename = "password.txt"
 	with open("{0}.asc".format(filename), "rb") as cfile:
     		plaintext, result, verify_result = gpg.Context().decrypt(cfile)
